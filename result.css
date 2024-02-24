@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+html{
+    font-size: 16px;
+   
+
+}
+body{
+    background-image: linear-gradient(to bottom right,#1D6FA0,#741F80);
+    background-image:url(trending/wallpa.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+header.logo{
+    font-size: .5rem;
+    padding-left: 4em;
+}
+header .search{
+    width: 30%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+header .search form{
+    position: relative;
+}
+header .search form input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding: 10px 50px 10px 20px;
+}
+
+header .search form input:focus{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+}
+::placeholder{
+    color:rgba(255, 255, 255, .5);
+}
+header .search form button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+}
+
+header .btns{
+    width: 85%;
+
+    margin: auto;
+    margin-left: 200px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .btns .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+header .btns .links li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .btns .links li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+header .btns .links li:hover::after{
+    width: 100%;
+
+}
+button{
+    height:10vh;
+    width: 20vh;
+    font-size: 4vh;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+}
+button:hover{
+    border: 2px solid;
+}
+main.main_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main.main_body .side_bar{ 
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main_body .side_bar h2{ 
+    margin: 10px;
+    font-size: 1.2rem;
+
+}
+main.main_body .side_bar .side_bar_btns{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20%;
+
+}
+main.main_body .side_bar .side_bar_btns li{ 
+    font-size: 1.1rem;
+    margin-top: 40px;
+
+}
+
+.movie-results {
+  display:flex;
+  flex-wrap:wrap;
+  gap: 20px;
+}
+
+.movie {
+  border: 5px solid #ccc;
+  box-shadow: 0 0 5px rgba(228, 11, 11, 1);
+  background-color: rgba(228, 11, 11, 0.2);
+  padding: 10px;
+  width: 1100px;
+  margin-left: -550px;
+}
+
+.movie-title {
+  font-size: 30px;
+  margin-top: 0;
+  font-style: bold;
+  text-shadow:2px 2px 4px rgba(96, 24, 24, 0.537);
+}
+
+.movie-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.movie-release{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.movie-rating {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.movie-category {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.not-found{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(96, 24, 24, 0.537);;
+}
+
+
+div.favorite-list {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    z-index: 999;
+    max-width: 400px;  
+  }
+  
+  div.favorite-list h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  div.favorite-list p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+div.favorite-list p:hover {
+    color: #ff4500;
+  }
+  
+  
+  
